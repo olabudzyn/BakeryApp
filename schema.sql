@@ -1,0 +1,10 @@
+DROP DATABASE IF EXISTS db;
+
+CREATE DATABASE db;
+
+USE db;
+
+CREATE TABLE mytable(
+   col1 VARCHAR(10),
+   col2 VARCHAR(10)
+);
