@@ -32,6 +32,6 @@ public class Store {
     @Column(name = "email")
     private String email;
 
-    @OneToMany(cascade = ALL, mappedBy = "store", fetch = LAZY)
+    @OneToMany(cascade = ALL, mappedBy = "store", fetch = LAZY, orphanRemoval = true)
     private List<Breadstuff> stock;
 }

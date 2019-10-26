@@ -30,7 +30,7 @@ public class Address {
     @Column(name = "street")
     private String street;
 
-    @Column(name = "number")
+    @Column(name = "home_number")
     private String number;
 
     @ManyToOne(fetch = LAZY)

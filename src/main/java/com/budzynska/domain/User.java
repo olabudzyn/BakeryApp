@@ -36,9 +36,9 @@ public class User {
     @Column(name = "email")
     private String email;
 
-    @OneToMany(cascade = ALL, mappedBy = "user", fetch = LAZY)
+    @OneToMany(cascade = ALL, mappedBy = "user", fetch = LAZY, orphanRemoval = true)
     private List<Address> addresses;
 
-    @OneToMany(cascade = ALL, mappedBy = "user", fetch = LAZY)
+    @OneToMany(cascade = ALL, mappedBy = "user", fetch = LAZY, orphanRemoval = true)
     private List<Order> orders;
 }
